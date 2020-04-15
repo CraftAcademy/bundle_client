@@ -1,20 +1,17 @@
-import React from "react";
+import React, { Component } from "react";
 import EventsList from "./components/EventsList";
 import CategoryHeader from "./components/CategoryHeader"
-
-const App = props => {  
+class App extends Component {
+  render() {
     return (
       <>
-      <CategoryHeader />
-      <Switch>
-        <Route exact path="/" component={CategoryHeader} />
         <h1>BundleUp</h1>
         <div>
+          <CategoryHeader />
           <EventsList />
         </div>
-        </Switch>
       </>
     );
   }
-
+}
 export default App;
