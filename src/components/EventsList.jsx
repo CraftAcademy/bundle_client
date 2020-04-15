@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import { Placeholder } from "semantic-ui-react";
+import { Placeholder, List } from "semantic-ui-react";
 
 const EventsList = () => {
   const [events, setEvents] = useState([]);
@@ -10,8 +10,7 @@ const EventsList = () => {
       try {
         const response = await axios.get("/events");
         setEvents(response.data.events);
-      } catch (error) {
-      }
+      } catch (error) {}
     };
 
     fetchEvents();
@@ -27,6 +26,10 @@ const EventsList = () => {
               <Placeholder.Paragraph>
                 <p id="description">{event.description}</p>
               </Placeholder.Paragraph>
+              <List.Item>
+                <List.Icon name="users" />
+                <List.Content id="category">{event.category}</List.Content>
+              </List.Item>
             </Placeholder>
           </div>
         );
