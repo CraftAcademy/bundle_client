@@ -19,3 +19,31 @@ describe("User can select event by category", () => {
       cy.get("#article-list").should("contain", "Play Soccer");
     });
   });
+
+  describe('User can navigate the app', () => {
+    beforeEach(() => {
+      cy.visit('http://localhost:3000');
+    })
+  
+  
+    it('to Home tab',() => {
+      cy.get('#home-tab').click();
+      cy.get('#about-header').should('contain', 'Home');
+    })
+    it('to Outdoors tab',() => {
+      cy.get('#outdoors-tab').click();
+      cy.get('#about-header').should('contain', 'Outdoors');
+    })
+    it('to Home tab',() => {
+      cy.get('#home-tab').click();
+      cy.get('#about-header').should('contain', 'Home');
+    })
+    it('to Home tab',() => {
+      cy.get('#home-tab').click();
+      cy.get('#about-header').should('contain', 'Home');
+    })
+    it('to Home tab',() => {
+      cy.get('#home-tab').click();
+      cy.get('#about-header').should('contain', 'Home');
+    })
+  })

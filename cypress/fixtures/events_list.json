@@ -1,18 +1,40 @@
 {
-  "events": [
-    {
-      "id": 1,
-      "title": "Play Soccer",
-      "description": "We need more players",
-      "category":"Sports",
-      "location":"Hagaparken"
-    },
-    {
-      "id": 2,
-      "title": "Walking on Sunshine",
-      "description": "From Slussen to Skansen",
-      "category":"Outdoors",
-      "location":"Slussen Tunnelbana Station"
-    }
-  ]
-}
+  {
+    "events": [
+      {
+        "id": 1,
+        "title": "Play Soccer",
+        "description": "We need more players",
+        "category":"sports",
+        "location":"Hagaparken"
+      },
+      {
+        "id": 2,
+        "title": "Walking on Sunshine",
+        "description": "From Slussen to Skansen",
+        "category":"outdoors",
+        "location":"Slussen Tunnelbana Station"
+      },
+      {
+        "id": 3,
+        "title": "Like royals",
+        "description": "Oysters and champagne",
+        "category":"food",
+        "location":"Skrapan"
+      },
+      {
+        "id": 4,
+        "title": "Shopping & chatting",
+        "description": "Girls afternoon at the mall",
+        "category":"casual",
+        "location":"Slussen Tunnelbana Station"
+      },
+      {
+        "id": 5,
+        "title": "Zombicide",
+        "description": "Kill all the zombies",
+        "category":"games",
+        "location":"Books and games cafe"
+      }
+    ]
+  }
